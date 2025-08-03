@@ -1,0 +1,197 @@
+til_template_why:
+  description: "なぜ〜すべきかを説明する TIL テンプレート"
+  parameters:
+    topic:
+      type: string
+      description: "説明の対象となるトピック"
+      example: "証明書の自動更新が必要"
+    question:
+      type: string
+      description: "なぜの質問内容"
+      example: "証明書の自動更新が必要なのか"
+    answer:
+      type: string
+      description: "結論として提示される明確な理由・効果"
+      example: "人的エラーを防止でき、更新作業の負荷が大きく下がるから"
+    table_of_contents:
+      type: markdown
+      description: "記事の目次となる箇条書き構成"
+      example: |
+        - [なぜ証明書の自動更新が必要なのか](#なぜ証明書の自動更新が必要なのか)
+          - [What's this file?](#whats-this-file)
+          - [Conclusion (忙しいとき向け)](#conclusion-忙しいとき向け)
+          - [目次](#目次)
+          - [従来の証明書管理の課題](#従来の証明書管理の課題)
+            - [手動管理の問題点](#手動管理の問題点)
+          - [自動管理による利点](#自動管理による利点)
+            - [自動化のメリット](#自動化のメリット)
+          - [関連](#関連)
+    main_sections:
+      type: markdown
+      description: "「なぜ」の質問に対する詳細な説明となるメインコンテンツのセクション"
+      example: |
+        ## 従来の証明書管理の課題
+        ### 手動管理の問題点
+        - 有効期限の管理ミス
+        - 更新作業の負荷
+        - ダウンタイムリスク
+        - 人的エラー
+        
+        ## ACMによる管理パターンの利点
+        ### 自動化のメリット
+        - 自動更新による運用負荷削減
+        - ヒューマンエラーの排除
+        - 24/7の可用性確保
+    related_sections:
+      type: markdown
+      description: "関連する TIL ファイル、外部ドキュメント、参考資料などのリファレンスリスト"
+      example: |
+        ## 関連        
+        ### 参考資料
+        - [Terraform公式ドキュメント](https://www.terraform.io/docs/)
+        - [AWSプロバイダードキュメント](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+
+til_template_what:
+  description: "定義・意味・構造などを説明する TIL テンプレート"
+  parameters:
+    title:
+      type: string
+      description: "記事のタイトル"
+      example: "AWS Certificate Manager（ACM）とは"
+    topic:
+      type: string
+      description: "説明の対象となる概念・技術・用語"
+      example: "AWS Certificate Manager（ACM）"
+    definition:
+      type: string
+      description: "その対象の定義や一般的な説明"
+      example: "AWSで証明書を自動管理できるサービス"
+    table_of_contents:
+      type: markdown
+      description: "記事の目次となる箇条書き構成"
+      example: |
+        - [AWS Certificate Manager（ACM）とは](#aws-certificate-manageracmとは)
+          - [What's this file?](#whats-this-file)
+          - [Conclusion (忙しいとき向け)](#conclusion-忙しいとき向け)
+          - [目次](#目次)
+          - [概要](#概要)
+          - [主要機能](#主要機能)
+            - [証明書の自動発行・更新](#証明書の自動発行更新)
+            - [AWSサービスとの統合](#awsサービスとの統合)
+            - [コスト最適化](#コスト最適化)
+          - [関連](#関連)
+    main_sections:
+      type: markdown
+      description: "技術や概念を説明するメインコンテンツのセクション"
+      example: |
+        ## 概要
+
+        AWS Certificate Manager（ACM）は、AWSリソース用のSSL/TLS証明書を簡単にプロビジョニング、管理、デプロイできるサービスです。
+
+        **一言で表すと：** SSL/TLS証明書の自動管理サービス
+
+        ### 詳細な定義
+
+        - 正式名称: AWS Certificate Manager
+        - カテゴリ: セキュリティ・証明書管理
+        - 登場時期: 2016年1月
+        - 開発元: Amazon Web Services
+
+        ## 主要機能
+
+        ### 証明書の自動発行・更新
+        - パブリック証明書の無料発行
+        - 自動更新（有効期限切れの心配なし）
+        - DNS検証またはメール検証
+
+        ### AWSサービスとの統合
+        - ELB（Elastic Load Balancing）
+        - CloudFront
+        - API Gateway
+        - その他のAWSサービス
+
+        ### コスト最適化
+        - パブリック証明書は無料
+        - プライベート証明書は有料
+        - 統合サービスでの利用に追加料金なし
+    related_sections:
+      type: markdown
+      description: "関連する TIL ファイル、外部ドキュメント、参考資料などのリファレンスリスト"
+      example: |
+        ### 参考資料
+        - [AWS公式ドキュメント](https://docs.aws.amazon.com/acm/)
+        - [料金ページ](https://aws.amazon.com/jp/certificate-manager/pricing/)
+
+til_template_how:
+  description: "手順・方法・HowToを解説する TIL テンプレート"
+  parameters:
+    title:
+      type: string
+      description: "記事のタイトル"
+      example: "AWS ACM証明書の設定方法"
+    goal:
+      type: string
+      description: "達成したい目的・ゴール"
+      example: "terraformによりAWS ACMの設定をするのか"
+    answer:
+      type: string
+      description: "実現方法の要約・結論"
+      example: "Terraformのaws_acm_certificateリソースとDNS検証を組み合わせて自動化する"
+    table_of_contents:
+      type: markdown
+      description: "記事の目次となる箇条書き構成"
+      example: |
+        - [AWS ACM証明書の設定方法](#aws-acm証明書の設定方法)
+          - [What's this file?](#whats-this-file)
+          - [Conclusion (忙しいとき向け)](#conclusion-忙しいとき向け)
+          - [目次](#目次)
+          - [Terraformでの基本設定](#terraformでの基本設定)
+            - [証明書リソースの定義](#証明書リソースの定義)
+            - [DNS検証の自動化](#dns検証の自動化)
+          - [Provider設定の詳細](#provider設定の詳細)
+            - [クロスリージョン対応](#クロスリージョン対応)
+    main_sections:
+      type: markdown
+      description: "手順や実装方法を説明するメインコンテンツのセクション"
+      example: |
+        ## Terraformでの基本設定
+        
+        ### 証明書リソースの定義
+        ```hcl
+        resource "aws_acm_certificate" "cert" {
+          domain_name       = "example.com"
+          validation_method = "DNS"
+          
+          lifecycle {
+            create_before_destroy = true
+          }
+        }
+        ```
+        
+        ### DNS検証の自動化
+        ```hcl
+        resource "aws_route53_record" "cert_validation" {
+          for_each = {
+            for dvo in aws_acm_certificate.cert.domain_validation_options : dvo.domain_name => {
+              name   = dvo.resource_record_name
+              record = dvo.resource_record_value
+              type   = dvo.resource_record_type
+            }
+          }
+          
+          zone_id = data.aws_route53_zone.main.zone_id
+          name    = each.value.name
+          records = [each.value.record]
+          ttl     = 60
+          type    = each.value.type
+        }
+        ```
+    related_sections:
+      type: markdown
+      description: "関連する TIL ファイル、外部ドキュメント、参考資料などのリファレンスリスト"
+      example: |
+        ## 関連      
+        ### 詳細設定
+        - [Provider設定詳解](../path/to/generic_provider_config.md)
+        - [条件分岐設定詳解](../path/to/generic_conditional_config.md)
+        - [リソースタイプ判定方法](../path/to/generic_resource_type_check.md)
