@@ -132,18 +132,3 @@ YYYY.MM.DD.HH.MM_[what|how|why]_topic_name.md
 例：
 - `2025.08.01.14.31_how_aws_acm_certificate_terraform_configuration_guide.md`
 - `2025.07.28.17.36_what_is-aws-lambda.md`
-
-## 📎 便利なリンク
-
-### テンプレート
-- [What テンプレート](template/til_template_what.md) - 「〜とは何か」を説明
-- [How テンプレート](template/til_template_how.md) - 「どのように〜するか」を説明
-- [Why テンプレート](template/til_template_why.md) - 「なぜ〜なのか」を説明
-- [テンプレート設定](template/params.yml) - 各テンプレートのパラメータ定義
-
-### 主要ディレクトリ
-- [Daily](daily/) - 日次学習記録（62ファイル）
-- [AWS](aws/) - AWSサービス別の要約（18ファイル）
-- [Terraform](terraform/) - IaC関連（2ファイル）
-- [Infrastructure](infrastructure/) - アーキテクチャ設計（3ファイル）
-- [Languages](languages/) - プログラミング言語（2ファイル）
