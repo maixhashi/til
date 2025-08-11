@@ -1,8 +1,10 @@
-# TIL (Today I Learned) - ナレッジベース インデックス
+# TIL (Today I Learned)
 
 > [!NOTE]
-> TIL（Today I Learned）関連の知識のメインエントリーファイルです。
-> TIL（Today I Learned）ファイルを目的別（Why/What/How）に整理・集約しています。
+> TIL（Today I Learned）
+>
+>  - summarized-TIL : dairy-TILを要約したファイル
+>  - dairy-TIL : 日々の学んだことのファイル
 
 ## 目次
 
