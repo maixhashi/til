@@ -1,0 +1,238 @@
+# 要約ファイル パラメータ設定
+# このファイルはSUMMARIZED_TEMPLATE.mdで使用されるパラメータを含みます
+
+# 基本情報
+topic: "[トピック名]"
+brief_description: "[トピックの簡潔な説明]"
+
+# 概要セクション
+key_points:
+  - key_point_1: "[重要ポイント1]"
+  - key_point_2: "[重要ポイント2]"
+  - key_point_3: "[重要ポイント3]"
+
+# What - 基本概念
+basic_concept:
+  description: "[基本概念の包括的な説明]"
+  definition: "[正式な定義や説明]"
+  components:
+    - name: "component_1"
+      description: "[コンポーネント1の説明]"
+    - name: "component_2"
+      description: "[コンポーネント2の説明]"
+    - name: "component_3"
+      description: "[コンポーネント3の説明]"
+
+# What - 主要な特徴
+features:
+  - name: "feature_1"
+    description: "[特徴1の説明]"
+    advantage: "[特徴1の利点]"
+  - name: "feature_2"
+    description: "[特徴2の説明]"
+    advantage: "[特徴2の利点]"
+  - name: "feature_3"
+    description: "[特徴3の説明]"
+    advantage: "[特徴3の利点]"
+
+# What - アーキテクチャ
+architecture:
+  diagram: |
+    ```mermaid
+    graph TD
+        A[Layer 1<br/>プレゼンテーション層] --> B[Layer 2<br/>ビジネスロジック層]
+        B --> C[Layer 3<br/>データアクセス層]
+        
+        style A fill:#f9f,stroke:#333,stroke-width:2px
+        style B fill:#bbf,stroke:#333,stroke-width:2px
+        style C fill:#bfb,stroke:#333,stroke-width:2px
+    ```
+  layers:
+    - name: "layer_1"
+      description: "[レイヤー1の説明]"
+    - name: "layer_2"
+      description: "[レイヤー2の説明]"
+    - name: "layer_3"
+      description: "[レイヤー3の説明]"
+  data_flow:
+    - step: "data_flow_step_1"
+      description: "[データフロー ステップ1]"
+    - step: "data_flow_step_2"
+      description: "[データフロー ステップ2]"
+    - step: "data_flow_step_3"
+      description: "[データフロー ステップ3]"
+
+# Why - 解決する課題
+problems:
+  - name: "problem_1"
+    impact: "[問題1の影響]"
+    example: "[問題1の具体例]"
+  - name: "problem_2"
+    impact: "[問題2の影響]"
+    example: "[問題2の具体例]"
+
+solutions:
+  - "solution_1: [解決策1]"
+  - "solution_2: [解決策2]"
+  - "solution_3: [解決策3]"
+
+# Why - メリット
+benefits:
+  business:
+    cost_reduction: "[コスト削減の詳細]"
+    productivity_improvement: "[生産性向上の詳細]"
+    scalability: "[スケーラビリティの詳細]"
+  technical:
+    - name: "technical_merit_1"
+      detail: "[技術的メリット1の詳細]"
+    - name: "technical_merit_2"
+      detail: "[技術的メリット2の詳細]"
+
+# Why - デメリット
+demerits:
+  - name: "demerit_1"
+    impact: "[デメリット1の影響]"
+    mitigation: "[デメリット1の対策]"
+  - name: "demerit_2"
+    impact: "[デメリット2の影響]"
+    mitigation: "[デメリット2の対策]"
+  - name: "demerit_3"
+    impact: "[デメリット3の影響]"
+    mitigation: "[デメリット3の対策]"
+
+# Why - 比較
+comparison:
+  alternatives:
+    - name: "alternative_1"
+      cost: "[代替案1のコスト]"
+      learning: "[代替案1の学習曲線]"
+      performance: "[代替案1のパフォーマンス]"
+      ecosystem: "[代替案1のエコシステム]"
+    - name: "alternative_2"
+      cost: "[代替案2のコスト]"
+      learning: "[代替案2の学習曲線]"
+      performance: "[代替案2のパフォーマンス]"
+      ecosystem: "[代替案2のエコシステム]"
+  topic_comparison:
+    cost: "[トピックのコスト]"
+    learning: "[トピックの学習曲線]"
+    performance: "[トピックのパフォーマンス]"
+    ecosystem: "[トピックのエコシステム]"
+
+# How - 実装
+implementation:
+  language: "javascript"  # または python, go, etc.
+  setup_code: |
+    // セットアップコードの例
+    npm install example-package
+    // または
+    pip install example-package
+  basic_implementation_code: |
+    // 基本的な実装例
+    const example = new Example();
+    example.doSomething();
+  execution_example: |
+    # 実行例
+    node index.js
+    # または
+    python main.py
+
+# How - ベストプラクティス
+best_practices:
+  - name: "best_practice_1"
+    code: |
+      // ベストプラクティス1のコード例
+      const result = await asyncFunction();
+    reason: "[なぜこれがベストプラクティスなのか]"
+  - name: "best_practice_2"
+    code: |
+      // ベストプラクティス2のコード例
+      try {
+        // 処理
+      } catch (error) {
+        // エラーハンドリング
+      }
+    reason: "[なぜこれがベストプラクティスなのか]"
+  - name: "best_practice_3"
+    points:
+      - point_1: "[ポイント1]"
+      - point_2: "[ポイント2]"
+      - point_3: "[ポイント3]"
+
+# How - 実装パターン
+patterns:
+  - name: "pattern_1_name"
+    use_case: "[パターン1の用途]"
+    code: |
+      // パターン1のコード例
+      class Pattern1 {
+        // 実装
+      }
+  - name: "pattern_2_name"
+    use_case: "[パターン2の用途]"
+    code: |
+      // パターン2のコード例
+      function pattern2() {
+        // 実装
+      }
+  - name: "pattern_3_name"
+    use_case: "[パターン3の用途]"
+    code: |
+      // パターン3のコード例
+      const pattern3 = () => {
+        // 実装
+      };
+
+# How - トラブルシューティング
+troubleshooting:
+  - error: "error_1"
+    cause: "[エラー1の原因]"
+    solution: |
+      // 解決方法のコード
+      // エラーを修正する方法
+  - error: "error_2"
+    cause: "[エラー2の原因]"
+    solution: |
+      // 解決方法のコード
+      // エラーを修正する方法
+  - error: "error_3"
+    cause: "[エラー3の原因]"
+    solution: |
+      // 解決方法のコード
+      // エラーを修正する方法
+
+# daily-TIL参照
+daily_til_references:
+  what:
+    - timestamp: "2025.07.28.17.36"
+      filename: "what_example.md"
+      filepath: "daily/2025.07.28.17.36_what_example.md"
+      description: "[このファイルから抽出した内容の説明]"
+    - timestamp: "2025.07.29.10.15"
+      filename: "what_example2.md"
+      filepath: "daily/2025.07.29.10.15_what_example2.md"
+      description: "[このファイルから抽出した内容の説明]"
+  why:
+    - timestamp: "2025.07.28.16.40"
+      filename: "why_example.md"
+      filepath: "daily/2025.07.28.16.40_why_example.md"
+      description: "[このファイルから抽出した内容の説明]"
+  how:
+    - timestamp: "2025.07.30.14.22"
+      filename: "how_example.md"
+      filepath: "daily/2025.07.30.14.22_how_example.md"
+      description: "[このファイルから抽出した内容の説明]"
+
+# バージョン履歴
+version_history:
+  initial:
+    version: "1.0.0"
+    date: "YYYY-MM-DD"
+    changes: "初版作成"
+  updates:
+    - version: "[バージョン番号]"
+      date: "YYYY-MM-DD"
+      changes: "[主な変更内容]"
+
+# メタ情報
+last_updated: "YYYY-MM-DD"
