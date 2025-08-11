@@ -1,0 +1,124 @@
+# インデックスファイル パラメータ設定
+# このファイルはREADME_TEMPLATE.mdで使用されるパラメータを含みます
+
+# 基本情報
+topic_name: "[トピック名]"
+
+# 目次用データ
+table_contents:
+  - topic_family: "[トピックファミリー1]"
+    topics:
+      - "[トピック1-1]"
+      - "[トピック1-2]"
+  - topic_family: "[トピックファミリー2]"
+    topics:
+      - "[トピック2-1]"
+      - "[トピック2-2]"
+
+# TILsデータ
+# {{each}}で繰り返し処理される部分
+tils:
+  - topic_family: "[トピックファミリー1]"
+    topic: "[トピック1-1]"
+    # 要約版TIL（整理されたナレッジ）
+    summarized_til:
+      what:
+        - filename: "what_[概念名].md"
+          filelink: "summarized/what_[概念名].md"
+          overview_description: "[基本概念の要約。これが何であるか、主要な機能は何か]"
+      why:
+        - filename: "why_[理由].md"
+          filelink: "summarized/why_[理由].md"
+          overview_description: "[なぜこれが必要なのかの要約。どのような問題を解決するのか]"
+      how:
+        - filename: "how_[実装方法].md"
+          filelink: "summarized/how_[実装方法].md"
+          overview_description: "[どのように使用・実装するのかの要約。ベストプラクティス]"
+    
+    # 日次TIL（学習記録）
+    daily_til:
+      what:
+        - timestamp: "2025.07.28.17.36"
+          filename: "what_[ファイル名].md"
+          filelink: "daily/2025.07.28.17.36_what_[ファイル名].md"
+          overview_description: "[その日学んだ基本概念の詳細]"
+        - timestamp: "2025.07.29.10.15"
+          filename: "what_[ファイル名2].md"
+          filelink: "daily/2025.07.29.10.15_what_[ファイル名2].md"
+          overview_description: "[追加で学んだ概念]"
+      why:
+        - timestamp: "2025.07.28.16.40"
+          filename: "why_[ファイル名].md"
+          filelink: "daily/2025.07.28.16.40_why_[ファイル名].md"
+          overview_description: "[なぜ必要なのかの詳細な理由]"
+      how:
+        - timestamp: "2025.07.30.14.22"
+          filename: "how_[ファイル名].md"
+          filelink: "daily/2025.07.30.14.22_how_[ファイル名].md"
+          overview_description: "[具体的な実装手順や使用方法]"
+
+  - topic_family: "[トピックファミリー1]"
+    topic: "[トピック1-2]"
+    summarized_til:
+      what:
+        - filename: "what_[概念名2].md"
+          filelink: "summarized/what_[概念名2].md"
+          overview_description: "[基本概念の要約]"
+      why:
+        - filename: "why_[理由2].md"
+          filelink: "summarized/why_[理由2].md"
+          overview_description: "[なぜ必要なのかの要約]"
+      how:
+        - filename: "how_[実装方法2].md"
+          filelink: "summarized/how_[実装方法2].md"
+          overview_description: "[実装方法の要約]"
+    daily_til:
+      what:
+        - timestamp: "2025.08.01.09.30"
+          filename: "what_[ファイル名3].md"
+          filelink: "daily/2025.08.01.09.30_what_[ファイル名3].md"
+          overview_description: "[学習内容の詳細]"
+      why: []  # データがない場合は空配列
+      how:
+        - timestamp: "2025.08.02.15.45"
+          filename: "how_[ファイル名3].md"
+          filelink: "daily/2025.08.02.15.45_how_[ファイル名3].md"
+          overview_description: "[実装詳細]"
+
+# 使用例
+# tils:
+#   - topic_family: "AWS Services"
+#     topic: "Lambda"
+#     summarized_til:
+#       what:
+#         - filename: "what_aws_lambda.md"
+#           filelink: "summarized/what_aws_lambda.md"
+#           overview_description: "AWS Lambdaの包括的な概要。サーバーレスコンピューティングの基本"
+#       why:
+#         - filename: "why_serverless_architecture.md"
+#           filelink: "summarized/why_serverless_architecture.md"
+#           overview_description: "サーバーレスアーキテクチャを採用すべき理由とメリット"
+#       how:
+#         - filename: "how_aws_lambda_best_practices.md"
+#           filelink: "summarized/how_aws_lambda_best_practices.md"
+#           overview_description: "AWS Lambdaのベストプラクティスと実装パターン"
+#     daily_til:
+#       what:
+#         - timestamp: "2025.07.28.17.36"
+#           filename: "what_is-aws-lambda.md"
+#           filelink: "daily/2025.07.28.17.36_what_is-aws-lambda.md"
+#           overview_description: "AWS Lambdaの基本概念。イベント駆動型で従量課金制"
+#         - timestamp: "2025.07.28.16.45"
+#           filename: "what_aws_lambda_security_restrictions.md"
+#           filelink: "daily/2025.07.28.16.45_what_aws_lambda_security_restrictions.md"
+#           overview_description: "AWS Lambdaのセキュリティ制限事項"
+#       why:
+#         - timestamp: "2025.07.28.16.42"
+#           filename: "why_serverless_concept_aws_lambda.md"
+#           filelink: "daily/2025.07.28.16.42_why_serverless_concept_aws_lambda.md"
+#           overview_description: "サーバーレスのパラダイムシフト。インフラ管理からの解放"
+#       how:
+#         - timestamp: "2025.07.28.18.00"
+#           filename: "how_aws_lambda_implementation.md"
+#           filelink: "daily/2025.07.28.18.00_how_aws_lambda_implementation.md"
+#           overview_description: "AWS Lambdaの実装方法。関数の作成からデプロイまで"
